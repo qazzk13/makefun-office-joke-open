@@ -5,8 +5,11 @@ import { join } from "node:path";
 // One office joke, a single line of at most 200 characters.
 // Fixed string on purpose: same output every run, no network, no clock,
 // no randomness, nothing to configure.
+// First draft was the printer toner one, which was more of a sigh than a
+// laugh. This version has an actual turn in it: the fish in the break room
+// microwave ends up running the team.
 const LINE =
-  "Our printer has been out of toner for three weeks because everyone assumed someone else ordered it, which is also exactly how every project here gets managed.";
+  "Somebody microwaved fish in the break room again, and honestly it showed more initiative than anyone in this morning's standup, so we promoted the fish to team lead.";
 
 const chars = [...LINE].length;
 if (chars < 1 || chars > 200) {
